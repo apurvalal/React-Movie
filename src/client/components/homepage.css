@@ -1,0 +1,89 @@
+.movie-page {
+	background: #fff;
+	height: inherit;
+}
+
+.movie-app > .row {
+	overflow-x: auto;
+	flex-wrap: nowrap;
+}
+
+.movie-pannel {
+	overflow-x: auto;
+	display: flex;
+	--bs-gutter-x: 1.5rem;
+	--bs-gutter-y: 0;
+	display: flex;
+	flex-wrap: nowrap;
+	margin-top: calc(-1 * var(--bs-gutter-y));
+	margin-right: calc(-0.5 * var(--bs-gutter-x));
+	margin-left: calc(-0.5 * var(--bs-gutter-x));
+}
+
+.movie-pannel::-webkit-scrollbar {
+	display: none;
+}
+
+.movie-pannel {
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+}
+
+#root {
+	height: 100vh;
+	background-color: #000;
+}
+
+.homepage-button {
+	background-color: #fff;
+	position: relative;
+	display: block;
+	padding: 30px;
+	z-index: 2;
+	display: inline-block;
+	padding: 10px 15px;
+	margin-left: 15px;
+	border-radius: 8px;
+	color: #fff;
+	background-color: #4663ac;
+}
+
+#main-page {
+	flex-wrap: nowrap;
+}
+
+.logout-button {
+	color: #fff;
+}
+
+.image-container {
+	position: relative;
+	transition: transform 0.2s;
+}
+
+.image-container:hover {
+	cursor: pointer;
+	transform: scale(1.1);
+}
+
+.image-container:hover .overlay {
+	opacity: 1;
+}
+
+.overlay {
+	position: absolute;
+	background: rgba(0, 0, 0, 0.8);
+	width: 100%;
+	transition: 0.5s ease;
+	opacity: 0;
+	bottom: 0;
+	font-size: 16px;
+	padding: 16px;
+	align-content: center;
+	text-align: center;
+}
+
+.watchlist-add {
+	margin-right: 4px;
+	color: #fff;
+}
