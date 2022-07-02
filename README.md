@@ -1,4 +1,4 @@
-# Fasal Assignment
+# React Movie Search
 
 ## Goal
 
